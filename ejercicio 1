@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+    int main ()
+{
+    int a=0;
+    int b=0; 
+    int sum=0;
+    
+    if (n )
+    {
+    }   
+    else
+    {   
+    if (condition)
+    }
+    return 0;
+}
+while(condition)
+{
+    
+}
+printf ("%i", res);
+
+scanf ("%i",&num);
+
