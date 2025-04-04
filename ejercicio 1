@@ -1,25 +1,81 @@
+//Soto Basilio Shari Victoria 
+//Practica 6
+//Calculadora utilizando "if"
+
 #include <stdio.h>
 
-    int main ()
+int main()
 {
-    int a=0;
-    int b=0; 
-    int sum=0;
-    
-    if (n )
+    //Inicialización
+    int a = 0;
+    int b = 0;
+    int res = 0;
+    int op;
+
+    //Menu impreso
+    printf("Menu. \n");
+    printf("Escoge una opcion: \n");
+    printf("1.- Suma \n");
+    printf("2.- Resta \n");
+    printf("3.- Multiplicacion \n");
+    printf("4.- Division \n");
+    printf("0.- Salida \n");
+    printf("Dame la opcion: ");
+
+    //Pedir opción
+    scanf("%d", &op);
+
+    //condición
+    while(op != 0)
     {
-    }   
-    else
-    {   
-    if (condition)
+        //Ingresar datos
+        printf("Ingrese primera cifra: ");
+        scanf("%d", &a);
+        printf("ingrese segunda cifra: ");
+        scanf("%d", &b);
+
+        //Seleccionar operación
+        if(op == 1)
+        {
+            res = a + b;
+        }
+        else
+        {
+            if (op == 2)
+            {
+                res = a - b;
+            }
+            else
+            {
+                if(op == 3)
+                {
+                    res = a * b;
+                }
+                else
+                {
+                    res = a / b;
+                }
+            }
+            
+        }
+
+        //Imprimir resultado
+        printf("El resultado es: %d \n", res);
+
+        //Regresar al menu
+        printf("Menu. \n");
+        printf("Escoge una opcion: \n");
+        printf("1.- Suma \n");
+        printf("2.- Resta \n");
+        printf("3.- Multiplicacion \n");
+        printf("4.- Division \n");
+        printf("0.- Salida \n");
+        printf("Dame la opcion: ");
+
+        //Pedir opción
+        scanf("%d", &op);
     }
+
+    //Terminar
     return 0;
 }
-while(condition)
-{
-    
-}
-printf ("%i", res);
-
-scanf ("%i",&num);
-
